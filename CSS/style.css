@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+* a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #303030;
+}
+
+header {
+  background-color: #303030;
+}
+
+.container-grid {
+  height: 150px;
+
+  position: relative;
+
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cabecalho {
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #404040;
+  
+}
+
+.menu-left {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 2px;
+  margin-left: 20px;
+}
+
+.search {
+  width: 490px;
+  height: 50px;
+
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+  background-color: #FFF;
+
+  display: flex;
+  align-items: center;
+}
+
+.search>i {
+  padding-top: 11px;
+  padding-left: 15px;
+  font-size: 24px;
+  color: #303030;
+  margin: auto 0;
+  padding: 0;
+}
+
+.search>input {
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 480px;
+  margin: 0;
+
+  background: transparent;
+
+  font-size: 20px;
+  color: white;
+  
+}
+
+.search ::placeholder {
+  color: #ABAAAD;
+  font-size: 20px;
+}
+
+.btn-categoria {
+  padding: 0;
+  border: none;
+  outline: none;
+
+  position: relative;
+
+  margin-top: 15px;
+}
+
+.btn-categoria .button {
+  width: 400px;
+  height: 65px;
+
+  position: relative;
+  left: 0;
+}
+
+.menu-dropdown {
+  width: 340px;
+  height: 200%;
+  border-radius: 5px;
+  background-color: #424242;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  display: none;
+
+  position: relative;
+  top: 6px;
+  left: 15px;
+  z-index: 1;
+}
+
+.menu-dropdown ul {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-dropdown ul:first-child {
+  padding-top: 7px;
+}
+
+.menu-dropdown li {
+  width: 100%;
+  margin: 0 auto;
+
+  border-radius: 5px;
+
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 4px;
+
+  background-color: #303030;
+}
+
+.menu-dropdown li:hover {
+  background-color: #ABAAAD;
+}
+
+.menu-dropdown p {
+  margin: 0 auto;
+  padding-left: 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.button>i {
+  font-size: 40px;
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}
+
+.button {
+  width: 25%;
+  height: 65px;
+
+  position: absolute;
+  left: 5px;
+}
+
+.button>p {
+  text-align: right;
+  font-size: 1.1em;
+  font-weight: bold;
+
+  margin: 0 auto;
+}
+
+.logo-img {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+
+  align-self: center;
+
+  position: absolute;
+  left: 50%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-img img {
+  width: 300%;
+  height: 300%;
+}
+
+.logo-img>p {
+
+  width: 100px;
+
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #FFF;
+
+}
+
+.icon-btn {
+  width: 200px;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  background: transparent;
+
+  margin: 0 10%;
+}
+
+.icon-btn>a {
+  margin: auto 0;
+  padding: 0;
+}
+
+.icon-btn>a>i {
+  font-size: 40px;
+  color: #FFF;
+}
+
+.banner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* -webkit-box-shadow: 1px 1px 13px 8px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 13px 8px rgba(0, 0, 0, 0.75); */
+
+  width: 100%;
+  height: 450px;
+  margin-top: 10px;
+
+}
+
+.img1 {
+  background-image: url("../IMG/GameManiaB1.png");
+  transition: 1s;
+}
+
+.img2 {
+  background-image: url("../IMG/GameManiaB2.png");
+  transition: 1s;
+}
+
+.img3 {
+  background-image: url("../IMG/GameManiaB3.png");
+  transition: 1s;
+}
+
+.progress-bar {
+  width: 0%;
+  display: block;
+}
+
+.progress.active .progress-bar {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.separador {
+  width: 100%;
+  height: 5px;
+
+  margin: 0 auto;
+
+  background-color: #FFF;
+
+  position: relative;
+  top: 60px;
+}
+
+.lista-prod {
+  background-color: #424242;
+  height: 1200px;
+  padding-top: 100px;
+}
+
+.produtos-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.produto a img {
+  width: 200px;
+  height: 200px;
+}
+
+.produto a {
+  text-decoration: none;
+}
+
+.produto h5 {
+  width: 200px;
+  font-size: 14px;
+  color: #E5E5E5;
+
+  padding-top: 5px;
+  margin: 0 auto;
+}
+
+.produto p {
+  width: 200px;
+  margin: 0;
+}
+
+.text1 {
+  font-size: 11px;
+  color: #E90313;
+  padding-top: 10px;
+}
+
+.text2 {
+  font-size: 11px;
+  color: #00E525;
+}
+
+.text3 {
+  font-size: 14px;
+  color: #00E525;
+}
+
+.text4 {
+  font-size: 11px;
+  color: #E5E5E5;
+}
+
+.text5 {
+  font-size: 14px;
+  color: #E90313;
+}
+
+.text6 {
+  font-size: 11px;
+  color: #E5E5E5;
+}
+
+.text7 {
+  font-size: 11px;
+  color: #E5E5E5;
+}
+
+.in-text {
+  color: #E90313;
+}
+
+.produtos-section2 {
+  margin-top: 400px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+}
+
+.produto02 a img {
+  width: 200px;
+  height: 200px;
+}
+
+.produto02 h5 {
+  width: 200px;
+  font-size: 14px;
+  color: #E5E5E5;
+
+  padding-top: 5px;
+  margin: 0 auto;
+}
+
+.produto02 p {
+  width: 200px;
+  margin: 0;
+}
+
+.produto02 a {
+  text-decoration: none;
+}
+
+.rodape {
+  margin-top: 5px;
+  margin-bottom: 50px;
+  height: 200px;
+  background-color: #424242;
+}
+
+.logo-rodape {
+  height: 70px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: -10px;
+  margin-left: 40px;
+}
+
+.logo-rodape a {
+  align-self: center;
+}
+
+.logo-rodape h3 {
+  align-items: center;
+  font-weight: 700;
+  color: #FFF;
+  padding-top: 10px;
+}
+
+.logo-rodape img {
+  width: 100px;
+  height: 100px;
+}
+
+.lista-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 40px 0 0 0;
+  padding-left: 45px;
+  list-style-type: none;
+}
+
+.lista-info li {
+  padding-bottom: 5px;
+  width: 350px;
+}
+
+.lista-info a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.lista-info span {
+  font-weight: bold;
+}
+
+.certificados {
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.certificados h4 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFF;
+}
+
+.certificados img {
+  width: 350px;
+  height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+
+  .container-grid {
+    width: 768px;
+    display: inline-block;
+  }
+
+  .btn-categoria {
+    position: absolute;
+    top: 50px;
+    left: 85%;
+    width: 75px;
+
+    margin: 0;
+  }
+
+  .jquerymenu {
+    display: flex;
+  }
+
+  .search {
+    width: 380px;
+    height: 60px;
+
+    border-radius: 10px;
+
+    display: inline-block;
+    justify-self: center;
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+
+  }
+
+  .search input {
+    width: 340px;
+    height: 60px;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .search i {
+    padding-top: 17px;
+  }
+
+
+  .btn-categoria .button {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+  }
+
+  .button {
+    padding: 0;
+    display: flex;
+
+    position: absolute;
+    top: -13px;
+    align-content: center;
+  }
+
+  .button>i {
+    padding: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .button>p {
+    display: none;
+  }
+
+  .menu-dropdown {
+    width: 200px;
+    height: 140px;
+    position: absolute;
+    left: -100px;
+    top: 85px;
+  }
+
+  .logo-img {
+    /* width: 80px;
+    height: 80px; */
+
+    align-self: center;
+
+    position: relative;
+    left: 0px;
+    top: -24px;
+  }
+
+  .icon-btn {
+    display: none;
+  }
+
+  .banner {
+    background-image: url("../IMG/GameManiaB1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    width: 768px;
+    max-width: 768px;
+    height: 250px;
+  }
+
+  .banner img {
+    display: none;
+  }
+
+  .produtos-section {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .produto {
+    display: grid;
+    justify-items: center;
+
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+
+    background-color: #424242;
+  }
+
+  .produto a img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .produto h5 {
+    width: 400px;
+    font-size: 1.2em;
+  }
+
+  .produto p {
+    margin: 0 auto;
+    width: 400px;
+    font-size: 1.2em;
+
+  }
+
+  .produtos-section2 {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: 80px;
+
+  }
+
+  .produto02 {
+    display: grid;
+    justify-items: center;
+
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+
+    background-color: #424242;
+  }
+
+  .produto02 a img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .produto02 h5 {
+    width: 400px;
+    font-size: 1.2em;
+  }
+
+  .produto02 p {
+    margin: 0 auto;
+    width: 400px;
+    font-size: 1.2em;
+  }
+
+  .rodape {
+    display: inline-flex;
+    position: relative;
+    top: 300px;
+  }
+}
