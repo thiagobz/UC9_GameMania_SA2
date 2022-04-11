@@ -3,14 +3,13 @@
 .carrinho-section { 
   display: flex;
   justify-content: center;
+  background-color: #303030;
 }
 
 .carrinho {
   background: #fff;
   width: 73.7vw;
   height: 50vh;
-
-  margin-top: 80px;
 }
 
 .titulo-carrinho {
@@ -18,10 +17,6 @@
   color: rgb(29, 29, 29);
   font-size: 22px;
   font-weight: 500;
-}
-
-.rodape {
-  margin-top: 15px;
 }
 
 .carrinho-lista {
